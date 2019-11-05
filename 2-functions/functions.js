@@ -14,7 +14,7 @@ describe("functions", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-            
+            function myFunction() {}
             ////////////////////////////////////////////////////////////////////
         });
     });
@@ -27,7 +27,7 @@ describe("functions", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-            const somevariable = undefined;
+            const myFunction = () => {};
             ////////////////////////////////////////////////////////////////////
 
             myFunction(); // myFunction should be callable now
@@ -40,7 +40,7 @@ describe("functions", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ ADD CODE HERE ✏️
-            let somevariable;
+        
             ////////////////////////////////////////////////////////////////////
 
             if (myFunction !== otherFunction) {
@@ -57,7 +57,7 @@ describe("functions", function() {
 
             ////////////////////////////////////////////////////////////////////
             // ✏️ EDIT LINE BELOW ✏️
-            myFunction(); // why is myFunction not callable?
+            otherFunction(); // why is myFunction not callable?
             ////////////////////////////////////////////////////////////////////
         });
     });
@@ -72,7 +72,7 @@ describe("functions", function() {
             // Declare a constant 'answer' with the correct result.
             // If you call getContext() here, you're a cheater! :)
             // ✏️ ADD CODE HERE ✏️
-
+            let answer;
             ////////////////////////////////////////////////////////////////////
 
             const result = getContext(); // <--- called without explicit context
@@ -96,7 +96,9 @@ describe("functions", function() {
             // and 'answerThirdResult' with the correct results.
             // If you call getContext() here, you're a cheater! :)
             // ✏️ ADD CODE HERE ✏️
-
+            const answerFirstResult = getContext();
+            const answerSecondResult = getContext.call(context);
+            const answerThirdResult = getContext();
             ////////////////////////////////////////////////////////////////////
 
             // First we call the function without an explicit context
@@ -134,7 +136,8 @@ describe("functions", function() {
             // and 'answerSecondResult' with the correct results.
             // If you call getContext() here, you're a cheater! :)
             // ✏️ ADD CODE HERE ✏️
-
+            const answerFirstResult = object.getContext();
+            const answerSecondResult = differentObject.getContext();
             ////////////////////////////////////////////////////////////////////
 
             // First we call the function on an object
@@ -165,7 +168,7 @@ describe("functions", function() {
             // You're not allowed to define a new function here.
             // If you call getContext() here, you're a cheater! :)
             // ✏️ ADD CODE HERE ✏️
-
+            
             ////////////////////////////////////////////////////////////////////
 
             const result = getContext.call(context);
@@ -218,7 +221,7 @@ describe("functions", function() {
                 // Unfortunately, it does not specify any parameters.
                 // Find a way to retrieve the first argument without specifying a parameter.
                 // ✏️ ADD CODE HERE ✏️
-
+                
                 ////////////////////////////////////////////////////////////////////
             }
 
@@ -273,7 +276,7 @@ describe("functions", function() {
                 // This means that we can't change it.
                 // Is there a way to still make 'myConst' equal true here?
                 // ✏️ ADD CODE HERE ✏️
-
+                myConst = true;
                 ////////////////////////////////////////////////////////////////////
 
                 if (myConst !== true) {
@@ -310,7 +313,7 @@ describe("functions", function() {
             ////////////////////////////////////////////////////////////////////
             // Can you implement a function 'myFunction' that returns a function?
             // ✏️ ADD CODE HERE ✏️
-
+            const result = myFunction();
             ////////////////////////////////////////////////////////////////////
 
             const result = myFunction();
